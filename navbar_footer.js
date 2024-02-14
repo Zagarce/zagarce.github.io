@@ -4,7 +4,7 @@
     const contenedorNavbar = document.getElementById('navBar1');
 
     // Ruta del archivo del navbar
-    const rutaNavbar = '../NavBar/navbar.html';
+    const rutaNavbar = './NavBar/navbar.html';
 
     // Cargar contenido del navbar
     fetch(rutaNavbar)
