@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const userInfo = document.getElementById('informacion')
     const userHistorial = document.getElementById('historial')
 
-    const url = `http://localhost:8080/admin/users`
+    const url = `https://xanerie.onrender.com/admin/users`
 
     fetch(url)
         .then(response => response.json())

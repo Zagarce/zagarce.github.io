@@ -64,7 +64,7 @@ function validarFormulario() {
                     mostrarAlerta('alertContainer', `¡Bienvenido, ${data.nombre}!`, 'success');
                     // Redirigir a la página de usuario
                     setTimeout(() => {
-                        window.location.href = "/Xianêrie/index.html";
+                        window.location.href = "../index.html";
                     }, 1800);
                 }
             })
@@ -203,10 +203,10 @@ function validarFormularioCrearCuenta() {
     // Verificar que todas las validaciones específicas sean exitosas, incluyendo la de repetir contraseña
     if (nombreValido && apellidoValido && emailValido && contraseñaValida && repetirContraseñaValido && noSoyRobotValido && aceptoTerminosValido) {
         // Si todas las validaciones específicas son exitosas redirige a la pagina_de_usuario
-        mostrarAlerta2('Registro exitoso. ¡Bienvenido a Xanêrie! ', 'success');
+        mostrarAlerta2('¡Bienvenido a Xanêrie! Inicia sesión.', 'success');
         setTimeout(() => {
-            window.location.href = "/Xianêrie/Login/index.html";
-        }, 1500);
+            window.location.href = "./index.html";
+        }, 1800);
         return true;
     }
 

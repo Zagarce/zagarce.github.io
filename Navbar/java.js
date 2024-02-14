@@ -17,7 +17,7 @@ const cerrarSesion = document.getElementById('cerrarSesion')
 
 if (usuario) {
     cuenta.innerHTML = `
-    <a href="/Xianêrie/pagina_de_usuario/pagina_usuario.html">Mi Perfil</a>
+    <a href="../pagina_de_usuario/pagina_usuario.html">Mi Perfil</a>
     `
     cerrarSesion.innerHTML = `
     <button id="cerrarSesionBtn">Cerrar sesión</button>
@@ -27,10 +27,10 @@ if (usuario) {
         sessionStorage.removeItem('usuario');
         sessionStorage.removeItem('pedidos');
         sessionStorage.removeItem('idPedido');
-        window.location.href = '/Xianêrie/index.html'
+        window.location.href = '../index.html'
     })
 } else {
     cuenta.innerHTML = `
-    <a href="/Xianêrie/Login/index.html">Cuenta</a>
+    <a href="../Login/index.html">Cuenta</a>
     `
 }
