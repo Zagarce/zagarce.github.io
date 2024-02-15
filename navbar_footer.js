@@ -4,7 +4,7 @@
     const contenedorNavbar = document.getElementById('navBar1');
 
     // Ruta del archivo del navbar
-    const rutaNavbar = './NavBar/navbar.html';
+    const rutaNavbar = '/Navbar/navbar.html';
 
     // Cargar contenido del navbar
     fetch(rutaNavbar)
@@ -15,7 +15,7 @@
 
             // Importamos java.js despues de cargar el navbar
             const scriptJava = document.createElement('script');
-            scriptJava.src = '../Navbar/java.js';
+            scriptJava.src = '/Navbar/java.js';
             document.body.appendChild(scriptJava);
         })
         .catch(error => console.error('Error al cargar la Navbar:', error));
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const contenedorFooter = document.getElementById('footer1');
 
   // Ruta del archivo del footer
-  const rutaFooter = '../Footer/index.html';
+  const rutaFooter = '/Footer/index.html';
 
   // Cargar contenido del footer
   fetch(rutaFooter)
