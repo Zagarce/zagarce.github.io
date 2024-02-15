@@ -206,7 +206,7 @@ button{
 *SECTION 3, CARD FORMULAS
 */
 #formulas{
-    width: 100.5%;
+    width: 100%;
     height: 600px;
     display: flex;
     flex-direction: row;
@@ -266,6 +266,7 @@ button{
 #vinculo--formulas{
     color: var(--main-white);
     text-align: right;
+    padding-bottom: 20px;
 }
 
 #vinculo--formulas:hover{
@@ -465,7 +466,7 @@ button{
 
     /* SECTION 3 FORMULAS */
     #formulas{
-        width: 101%;
+        width: 100%;
         height: 255px;
     }
     
@@ -547,5 +548,55 @@ button{
     padding-left: 25px;
     padding-right: 25px;
 }
+
+}
+
+/*
+!NUEVO
+*RESPONSIVIDAD MOBILE VERSION SMALL SCREEN
+*/
+@media screen and (max-width: 520px){
+    .contenedorcarrusel--productos{ 
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;    
+    }
+
+    #productos{
+        height: 750px;
+    }
+
+}
+
+/*
+*RESPONSIVIDAD MOBILE VERSION xSMALL SCREEN
+*/
+@media screen and (max-width: 445px){
+
+    #productos{
+        height: 650px;
+    }
+
+    .contenedorcarrusel--productos{ 
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;    
+    }
+
+    #contenedorbtn--productos{
+        margin-top: 10%;
+        display: flex;
+        justify-content: center;
+    } 
+
+    #tipospiel{
+        width: 100%;
+        height: 225px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
 
 }
