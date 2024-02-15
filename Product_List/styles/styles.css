@@ -72,15 +72,15 @@ body{
 }
 
 @media(max-width: 556px){
-    /* .grid-tipo-piel{
+    .grid-tipo-piel{
        display: flex;
        flex-direction: column;
-       max-width: 320px;
-       margin: 4% 20%;
-   } */
+       max-width: 100%;
+       margin: 4%;
+   }
    .responsive{
        height: auto;
-       min-height: 90px;
+       min-height: auto;
    }
 }
 
